@@ -18,15 +18,36 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
 });
 
-
+Route::view('/register', 'register');
 Route::post('/login', [UserController::class,'login']);
+Route::post('/register', [UserController::class,'register']);
 Route::get('/', [ProductController::class,'index']);
 Route::get('detail/{id}', [ProductController::class, 'detail']);
 Route::get('search', [ProductController::class, 'search']);
 Route::post('add_to_cart', [ProductController::class, 'addToCart']);
+Route::get('cartlist', [ProductController::class, 'cartList']);
+Route::get('removecart/{id}', [ProductController::class, 'removeCart']);
+Route::get('ordernow', [ProductController::class, 'orderNow']);
+Route::post('orderplace', [ProductController::class, 'orderPlace']);
+Route::get('myorders', [ProductController::class, 'myOrders']);
+
+Route::get('/addproduct',[ProductController::class,'addProduct'])->name('add.product');
+Route::post('/store',[ProductController::class,'storeProduct'])->name('store.product');
+
+Route::get('/orderlist',[ProductController::class,'orderlist'])->name('order.list');
+Route::get('/ordercomplete/{id}',[ProductController::class,'orderComplete'])->name('order.complete');
+Route::get('/ordercancel/{id}',[ProductController::class,'orderCancel'])->name('order.cancel');
 

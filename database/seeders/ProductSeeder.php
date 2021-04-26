@@ -22,7 +22,7 @@ class ProductSeeder extends Seeder
             'price'=> '1022',
             'description' => 'Comes with the latest bionic chip',
             'category'=>'mobile',
-            'gallery'=>'https://i0.wp.com/www.techquintal.com/wp-content/uploads/2020/09/Apple-iPhone-12-Pro-Max-6GB-RAM.jpg?fit=1366%2C768&ssl=1'
+            'gallery'=>'https://img.router-switch.com/media/customoptions/129/2/4/iphone-12-pro-max-blue.jpg'
            ],
            [
             'name' => 'Samsung Galaxy S21 Ultra',

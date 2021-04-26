@@ -1,6 +1,18 @@
 @extends('master')
 @section('content')
+    {{-- here --}}
+        <!-- The social media icon bar -->
+<div class="icon-bar">
+    <a href="#" class="facebook"> <i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
+
+    {{-- here --}}
     <div class="container custom-product">
+        <h2 style="font-size: 27px"><b>IN THE CART</b><h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -37,19 +49,137 @@
 
           </div>
 
-        <div class="trending-wrapper">
-            <h3>Trending</h3>
+          <div class="trending-wrapper">
+            <h3 style="Georgia"><strong>TRENDING NOW</strong></h3>
+                <br>
+             <div class="trendingg">
             @foreach ($products as $item)
-                <div class="trending-item">
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
                     <a href="detail/{{ $item['id']}}">
                     <img class="trending-image" src="{{ $item['gallery'] }}">
-                    <div class="">
+                    <div class="text">
                         <h5>{{ $item['name'] }}</h5>
                     </div>
                 </a>
                 </div>
+            </div>
             @endforeach
         </div>
+        </div>
+
+
+        <br><br><br><br><br><br>
+
+
+        {{-- here --}}
+
+        <h3 style="Copperplate"><b>MORE PRODUCTS</b></h3>
+        <br><br>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <div class="thumbnail-image">
+                    <img src="https://www.aroged.com/wp-content/uploads/2021/02/The-future-Asus-ROG-Phone-5-is-the-best-smartphone.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
+                    </div>
+                    <div class="caption">
+                        <h3>Gaming Phones</h3>
+                        <p>Avail the latest gaming phones at staggering offers</p>
+                            <div class="clearfix">
+                                <div class="pull-left price"><h4><b>$799</b></h4></div>
+                                    <p></p><a href="#" class="btn btn-primary pull-right" role="button">View Product</a> </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-image">
+                      <img src="https://cdn.mos.cms.futurecdn.net/q85MvJGQbMB9qHPTPqtsXm.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
+                      </div>
+                      <div class="caption">
+                          <h3>Best Camera phones</h3>
+                          <p>Get the best camera phones at the best prices</p>
+                              <div class="clearfix">
+                                  <div class="pull-left price"><h4><b>$499</b></h4></div>
+                                      <p></p><a href="#" class="btn btn-primary pull-right" role="button">View Product</a> </p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-image">
+                      <img src="https://cdn.mos.cms.futurecdn.net/GdcaWSadcCWbt3am8Typ3E.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
+                      </div>
+                      <div class="caption">
+                          <h3>Fastest Phones</h3>
+                          <p>List of super fast phones that comes with the snapdragon 888</p>
+                              <div class="clearfix">
+                                  <div class="pull-left price"><h4><b>$1200</b></h4></div>
+                                      <p></p><a href="#" class="btn btn-primary pull-right" role="button">View Product</a> </p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <div class="thumbnail-image">
+                    <img src="https://i.pinimg.com/736x/05/8e/56/058e5672e07755f428028012fea3e74a.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
+                    </div>
+                    <div class="caption">
+                        <h3>Alienware Area 51</h3>
+                        <p>World's most powerful and overclockable gaming laptop. Featuring up to 10th Gen Intel® Core™ i9K processors</p>
+                            <div class="clearfix">
+                                <div class="pull-left price"><h4><b>$5799</b></h4></div>
+                                    <p></p><a href="#" class="btn btn-primary pull-right" role="button">View Product</a> </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-image">
+                      <img src="https://i.ytimg.com/vi/weU1pYsMnRk/maxresdefault.jpg" alt="..." style="max-height: 800px max-width: 800px" class="img-responsive">
+                      </div>
+                      <div class="caption">
+                          <h3>Asus Rog Strix G512</h3>
+                          <p>Comes with the GTX 1650ti to give you the best gaming experience</p>
+                              <div class="clearfix">
+                                  <div class="pull-left price"><h4><b>$2400</b></h4></div>
+                                      <p></p><a href="#" class="btn btn-primary pull-right" role="button">View Product</a> </p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-image">
+                      <img src="https://media.wired.com/photos/5d5ec4d7a9558100099f379e/191:100/w_1280,c_limit/Gear-Razer-blade-pro-17-source-razer-FATA.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive" >
+                      </div>
+                      <div class="caption">
+                          <h3>Razer Blade Pro 17</h3>
+                          <p>Razer's latest 17-inch laptop offers desktop-grade gaming performance in a weighty but portable package</p>
+                              <div class="clearfix">
+                                  <div class="pull-left price"><h4><b>$4890</b></h4></div>
+                                      <p></p><a href="#" class="btn btn-primary pull-right" role="button">View Product</a> </p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
       </div>
     </div>
+        {{-- here --}}
+        <br><br><br>
+
+    </div>
+</div>
 @endsection
