@@ -97,7 +97,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="thumbnail-image">
-                      <img src="https://cdn.mos.cms.futurecdn.net/q85MvJGQbMB9qHPTPqtsXm.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
+                      <img src="https://i.ytimg.com/vi/yJnohSuBIs4/maxresdefault.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
                       </div>
                       <div class="caption">
                           <h3>Best Camera phones</h3>
@@ -113,7 +113,7 @@
               <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="thumbnail-image">
-                      <img src="https://cdn.mos.cms.futurecdn.net/GdcaWSadcCWbt3am8Typ3E.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
+                      <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg" alt="..." style="max-height: 300px max-width: 200px" class="img-responsive">
                       </div>
                       <div class="caption">
                           <h3>Fastest Phones</h3>

@@ -41,10 +41,10 @@ class ProductController extends Controller
 
     function addToCart(Request $req)
     {
-        if($req->session()->has('user'))
+        if(session()->has('user'))
         {
             $cart= new Cart;
-            $cart->user_id = $req->session()->get('user')['id'];
+            $cart->user_id =session()->get('user')->id;
             $cart->product_id = $req->product_id;
             $cart->save();
             return redirect('/');
@@ -57,7 +57,7 @@ class ProductController extends Controller
 
     static function cartItem()
     {
-        $userId=session::get('user')['id'];
+        $userId=session()->get('user')->id;
         return Cart::where('user_id', $userId)->count();
     }
 
@@ -81,7 +81,7 @@ class ProductController extends Controller
 
     function orderNow()
     {
-        $userId=session::get('user')['id'];
+        $userId=session()->get('user')->id;
         $total=$products=DB::table('cart')
         ->join('products','cart.product_id','=', 'products.id')
         ->where('cart.user_id',$userId)
@@ -143,6 +143,7 @@ class ProductController extends Controller
         $product->category=$request->input('category');
         $product->description=$request->input('description');
         $product->price=$request->input('price');
+        // dd($product);
         $product->save();
     }
 

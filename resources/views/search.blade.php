@@ -5,9 +5,10 @@
     <div class="col-sm-3">
        <a href="#" class="btn btn-primary"><h3>Filter</h3></a>
     </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <div class="trending-wrapper">
-                <h4>Search Results</h4>
+                <h3>Search Results</h3>
+                <hr>
                 @foreach ($products as $item)
                 <div class="searched-item">
                     <a href="detail/{{ $item['id'] }}">

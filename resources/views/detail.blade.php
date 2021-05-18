@@ -168,7 +168,7 @@
                 <hr/>
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="http://www.simpleimageresizer.com/_uploads/photos/1284fde2/arman_8_70x80.png" class="img-rounded">
+                        <img src="http://www.simpleimageresizer.com/_uploads/photos/1284fde2/arman_1_70x80.png" class="img-rounded">
                         <div class="review-block-name"><a href="https://www.facebook.com/arman1167014">Arman</a></div>
                         <div class="review-block-date">January 29, 2020<br/>1 day ago</div>
                     </div>
