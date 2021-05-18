@@ -41,6 +41,9 @@ class RouteTest extends TestCase
         $response= $this->get('/detail/24');
         $data = $this->getResponseData($response,'product');
         $this->assertEquals($data->name,"LG 4k UHD TV");
+        $this->assertEquals($data->price,"1400");
+        $this->assertEquals($data->category,"tv");
+        $this->assertEquals($data->gallery,"https://www.lg.com/us/images/tvs/md07000410/gallery/desktop-01.jpg");
     }
 
     public function test_store()
